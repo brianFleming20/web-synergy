@@ -1,4 +1,4 @@
-aee6e6
+
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -30,7 +30,7 @@ p{
 
 /* title */
 #title {
-  background-color: #aee6e6;
+  background-color: #0278ae;
 }
 
 
@@ -40,24 +40,35 @@ p{
   padding: 3% 15% 8%;
 }
 
+.container{
+  background-color: whitesmoke;
+}
+
 .navbar {
   padding-bottom: 4.5rem;
 }
 
 .navbar-brand {
   font-family: "Ubuntu";
-  color: #210699;
+  color: #e8ffc1;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
 .navbar-nav  li a:hover {
-  color: #1abc9c !important;
+  color: #c1f6ff !important;
+}
+
+.li{
+  color: white;
 }
 
 .nav-item{
   padding-right: 18px;
 
+}
+.nav-link{
+  color: #e8ffc1;
 }
 
 .inputBox{
@@ -68,14 +79,22 @@ p{
 
 /* image rotate */
 .title-image {
-  width: 70%;
-  right: 0%;
-  
-  bottom: 10%;
-  position: absolute;
-
+position: absolute;
+  width: 110%;
+ 
 }
 
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
 .download-button {
   margin: 5% 3% 5% 0;
 }
@@ -107,7 +126,7 @@ p{
 #testimonials{
 
   text-align: center;
-  background-color:  #ef8172;
+  background-color:  #0278ae;
   color: white;
 }
 
@@ -123,7 +142,7 @@ p{
 
 #press{
   text-align: center;
-  background-color: #ef8172;
+  background-color: #51adcf;
 }
 
 .press-logo{
@@ -147,4 +166,10 @@ p{
 #footer{
   text-align: center;
 
+}
+
+.onRight{
+  text-align: right;
+  padding-right: 2rem;
+  color: #0278ae;
 }
