@@ -13,10 +13,12 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
+
 const personnelSite = "personnel site.";
 const commerse = "e-Commerse site.";
 const appSite = "application support site.";
+const gdprtext1 = "Our Company is part of the Our Company Group which includes Our Company International and Our Company Direct. This privacy policy will explain how our organization uses the personal data we collect from you when you use our website.";
+
 
 app.get("/", function(req, res) {
 
@@ -54,11 +56,15 @@ app.get("/ecommerse", function(req, res){
     });
 
 app.get("/contact", function(req, res){
-  res.render("contact", {contactContent: contactContent});
+  res.render("contact");
 });
 
 app.get("/about", function(req, res){
 res.render("about");
+});
+
+app.use("/", (req, res, next) => {
+  res.render("404");
 });
 
 app.listen(process.env.PORT || 3000, function() {
