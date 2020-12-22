@@ -21,15 +21,14 @@
 </head>
 
 <body>
-  
+
   <section id="title">
-  
+
     <!-- Nav Bar -->
 
     <div class="container-fluid">
-      <p>Under construction</p>
 
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-dark navbar-expand-lg">
 
         <a class="navbar-brand" href="">Web Synergy</a>
 
@@ -38,12 +37,17 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse text-color" id="navbarSupportedContent">
 
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item nav-link" ><a href="/">HOME</a></li>
-            <li class="nav-item nav-link" ><a href="/about">ABOUT US</a></li>
-            <li class="nav-link"><a href="/contact">CONTACT US</a></li>
+            <li class="link nav-item nav-link " ><a href="/" style="color:white">HOME</a></li>
+            <li class="link nav-item nav-link" ><a href="/about" style="color:white">ABOUT US</a></li>
+            <li class="link nav-link"><a href="/contact" style="color:white">CONTACT US</a></li>
+            <li class="link nav-link"><a href="/login" style="color:white">Login</a></li>
+              <li class="link nav-link"><a href="/register" style="color:white">Register</a></li>
+              <%if(currentUser){%>
+              <li class="link nav-link"><a href="/logout" style="color:white">Logout</a></li>
+              <%}%>
           </ul>
         </div>
       </nav>

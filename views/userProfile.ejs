@@ -1,0 +1,34 @@
+<%- include("partials/header"); -%>
+
+<h1>Success</h1>
+
+<h1>
+    User Profile
+</h1>
+<p class="cont">
+    After Login the user will reach here.
+</p>
+<form action="/" class="form-signin" method="POST">
+
+
+
+    <img class="mb-4" src="images/tick.png" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Ask me a Question or request a design quote.</h1>
+
+    <input type="text" name="fname" class="form-control top" placeholder="Name" required autofocus>
+
+    <input type="textarea" name="text" class="form-control middle" placeholder="Request or ask" rows="4" cols="50">
+    
+
+    <button class="btn btn-lg btn-primary btn-block bottom" type="submit">Submit</button>
+   
+  </form>
+  <div id="image">
+
+<ul>
+    <li><a href="/" style="color:white">Home</a></li>
+    <li><a href="/logout" style="color:white">Log-out</a></li>
+</ul>
+
+
+<%- include("partials/footer"); -%>
